@@ -1,0 +1,148 @@
+:root {
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	--success-color: rgb(0, 100, 0);
+	--error-color: #f04438;
+	--warning-color: #f79009;
+
+	--color-grey: #777777;
+	--color-light-grey: #cccccc;
+	--color-white: #ffffff;
+}
+
+/* @import "rsuite/dist/rsuite.css"; */
+// @import "rsuite/DateRangePicker/styles/index.css";
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.Toastify__toast-container .Toastify__close-button--light {
+	color: var(--color-white) !important;
+}
+
+/* Hide increment and decrement buttons in input type="number" elements */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none; /* Remove the spin buttons */
+	margin: 0; /* Remove any default margin */
+}
+
+@media screen and (max-width: 600px) {
+	.Toastify__toast-container {
+		/* Adjust the width of the container for mobile screens */
+		width: 200px;
+		height: 100px;
+		top: 70px;
+		right: var(--toastify-toast-right);
+		left: auto;
+	}
+
+	/* Adjust the style of toasts for mobile screens */
+	.Toastify__toast {
+		padding: 2px;
+		min-height: 0;
+		border-radius: 5px;
+	}
+
+	.Toastify__toast-body {
+		padding: 6px;
+		margin: 2px;
+	}
+}
+
+.chip-success {
+	background-color: rgb(0 153 22 / 20%) !important;
+	color: #009916 !important;
+
+	svg {
+		color: #009916 !important;
+	}
+}
+
+.chip-error-dark {
+	background-color: rgba(240, 68, 56, 0.2) !important;
+	color: #f04438 !important;
+
+	svg {
+		color: #f04438 !important;
+	}
+}
+
+.chip-error {
+	background-color: rgba(255, 96, 107, 0.2) !important;
+	color: rgb(255, 96, 107) !important;
+
+	svg {
+		color: rgb(255, 96, 107) !important;
+	}
+}
+
+.chip-warning {
+	background-color: rgba(247, 144, 9, 0.2) !important;
+	color: rgb(247, 144, 9) !important;
+
+	svg {
+		color: rgb(247, 144, 9) !important;
+	}
+}
+
+.chip-info {
+	background-color: rgba(2, 14, 130, 0.2) !important;
+	color: #06aed4 !important;
+
+	svg {
+		color: #06aed4 !important;
+	}
+}
+
+.material-table {
+	.MuiPaper-root {
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+		// padding-bottom: 1rem;
+	}
+
+	.MuiIconButton-root {
+		padding: 0.8rem;
+	}
+	.Mui-TableHeadCell-ResizeHandle-Wrapper {
+		hr {
+			border-color: var(--color-light-grey);
+
+			&:hover {
+				border-color: var(--color-grey);
+			}
+		}
+	}
+
+	.MuiTableContainer-root {
+		scrollbar-width: thin;
+	}
+}
+
+.MuiTableCell-root {
+	border-bottom: 1px solid black;
+	font-size: 3rem;
+}
+
+.MuiTableCell-head {
+}
+
+.MuiTableCell-body {
+	& .MuiTableCell-root {
+	}
+}
